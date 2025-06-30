@@ -7,11 +7,11 @@
 
 <script setup>
 import { ref, computed, reactive, onMounted } from 'vue';
-import VueTable from '../components/VueTable.vue'
-import VueChart from '../components/VueChart.vue'
-import { useConfigStore } from '../store'
-import { useDateUtils } from '@/composables/useDateUtils'
-import { useFilterRows } from '@/composables/useFilterRows'
+import VueTable from '../components/VueTable.vue';
+import VueChart from '../components/VueChart.vue';
+import { useConfigStore } from '../store';
+import { useDateUtils } from '../composables/useDateUtils';
+import { useFilterRows } from '../composables/useFilterRows';
     const configStore = useConfigStore();
     const baseUrl = configStore.getHostUrl;
     const key = configStore.getKey;
